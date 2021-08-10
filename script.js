@@ -55,7 +55,7 @@ function start() {
         w = size.width
         h = size.height
         diag = Math.sqrt(w * w + h * h)
-        sizeFactor = 0.1 + diag / 1600
+        sizeFactor = 0.1 + diag / 1400
 
         canvas.width = Math.round(w * dpr)
         canvas.height = Math.round(h * dpr)
@@ -66,13 +66,7 @@ function start() {
     setSizes()
     window.addEventListener('resize', setSizes)
 
-    let prevTime = +new Date()
-
     function render() {
-        const now = +new Date()
-        const diff = (now - prevTime) / 16
-        prevTime = now
-
         const shouldRemove = []
 
         for (const i in lines) {
@@ -82,8 +76,8 @@ function start() {
             ctx.lineWidth = line.width * dpr
             ctx.strokeStyle = line.color
 
-            const newX = line.x + Math.sin(line.direction) * diff * sizeFactor
-            const newY = line.y + Math.cos(line.direction) * diff * sizeFactor
+            const newX = line.x + Math.sin(line.direction) * sizeFactor
+            const newY = line.y + Math.cos(line.direction) * sizeFactor
             ctx.moveTo(line.x * dpr, line.y * dpr)
             ctx.lineTo(newX * dpr, newY * dpr)
             line.x = newX
@@ -93,7 +87,7 @@ function start() {
             line.direction += line.directionChange
             line.directionChange += line.directionChangeChange
 
-            line.splitLast += diff
+            line.splitLast += 1
             if (line.splitLast > 40 && Math.random() < 0.07) {
                 line.splitLast = 0
                 lines.push({
