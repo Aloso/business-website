@@ -22,7 +22,7 @@ function start() {
     /** @type {Line[]} */
     let lines = []
 
-    let dpr, w, h, diag, sizeFactor
+    let dpr = 1, w = 0, h = 0, diag = 0, sizeFactor = 1
 
     function init() {
         lines = [
@@ -52,6 +52,7 @@ function start() {
     function setSizes() {
         dpr = devicePixelRatio
         const size = canvas.getBoundingClientRect()
+        if (size.width === w && size.height === h) return
         w = size.width
         h = size.height
         diag = Math.sqrt(w * w + h * h)
