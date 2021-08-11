@@ -84,12 +84,16 @@ header .small-h {
     font-size: 1.1rem;
 }
 
-h2 {
+h1, h2 {
     font-family: Poppins;
     font-weight: 600;
     font-size: 2rem;
     margin: 2rem 0;
     line-height: 1.5em;
+}
+h1 {
+    font-size: 2.3rem;
+    margin-top: 3rem;
 }
 
 p {
@@ -106,8 +110,12 @@ h2, p {
     padding: 3rem 5rem;
 }
 
-.block a:link {
+.block a {
     color: #0079eb;
+    text-decoration: none;
+}
+.block a:hover {
+    text-decoration: underline;
     text-underline-offset: 0.3rem;
     text-decoration-thickness: 1.6px;
 }
@@ -117,17 +125,20 @@ h2, p {
     color: white;
 }
 
-.block.ux {
+.block.dark.blue {
     background-color: #00565c;
 }
-.block.cms {
+.block.dark.orange {
     background-color: #7a3700;
 }
-.block.showcases {
+.block.dark.green {
+    background-color: #004200;
+}
+.block.dark.black {
     background-color: #040404;
 }
 
-.block.dark a:link {
+.block.dark a {
     color: #6fb9ff;
 }
 
@@ -140,17 +151,17 @@ a.showcase {
     padding: 2rem;
     vertical-align: top;
     margin: 0 2rem 2rem 0;
-    border: 1px solid #444444;
+    background-color: #eeeeee;
+    text-decoration: none;
     border-radius: 1rem;
     font-size: 1.2rem;
     color: inherit;
-    text-decoration: none;
     transition: .2s;
 }
 
 a.showcase:hover, a.showcase:focus {
-    background-color: #101010;
-    color: #6fb9ff;
+    background-color: #dddddd;
+    text-decoration: none;
 }
 
 .contact-button {
