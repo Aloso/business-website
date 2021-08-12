@@ -16,11 +16,8 @@
 
 <body>
     <div class="sticky-header" aria-hidden="true">
-        <strong>Web Design</strong> von Ludwig Stecher
-        <button class="contact-button"
-            onclick="javascript:window.scrollTo({ top: document.body.scrollHeight, left: 0, behavior: 'smooth' })">
-            Kontakt
-        </button>
+        <a class="home-link" href="."><strong>Web Design</strong> von Ludwig Stecher</a>
+        <a class="contact-button" href="mailto:contact@ludwigstecher.de">Kontakt</a>
     </div>
 
     <div class="block">
@@ -67,10 +64,20 @@
     </div>
 
     <div class="block dark">
+        <button class="up-button"
+            onclick="javascript:window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })">↑</button>
+
         &copy; 2021 Ludwig Stecher
-        <span style="margin: 0 1rem"></span>
+        <div class="footer-space"></div>
+
+        <a href="https://github.com/Aloso">GitHub</a>
+        <div class="footer-space small"></div>
+        <a href="https://www.linkedin.com/in/ludwig-stecher-4742721b3/">LinkedIn</a>
+        <div class="footer-space small"></div>
+        <a href="https://aloso.github.io">Blog</a>
+        <div class="footer-space small"></div>
         <a href="impressum.html">Impressum</a>
-        <span style="margin: 0 1rem"></span>
+        <div class="footer-space small"></div>
         <a href="datenschutz.html">Datenschutz</a>
     </div>
 </body>

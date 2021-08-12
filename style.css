@@ -84,7 +84,7 @@ header .small-h {
     font-size: 1.1rem;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: Poppins;
     font-weight: 600;
     font-size: 2rem;
@@ -95,14 +95,23 @@ h1 {
     font-size: 2.3rem;
     margin-top: 3rem;
 }
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
 
-p {
+p, dd, dt {
     font-size: 1.2rem;
     margin: 2rem 0;
     line-height: 1.5em;
 }
+dd {
+    margin-left: 2rem;
+}
 
-h2, p {
+h1, h2, h3, p, dl {
     max-width: 55rem;
 }
 
@@ -164,11 +173,22 @@ a.showcase:hover, a.showcase:focus {
     text-decoration: none;
 }
 
+.home-link {
+    color: inherit;
+    text-decoration: none;
+}
+.home-link:hover, .home-link:active {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 1.6px;
+}
+
 .contact-button {
     font-family: 'Work Sans', sans-serif;
     font-size: inherit;
     color: white;
     background-color: #0051ff;
+    text-decoration: none;
     line-height: 40px;
     vertical-align: top;
     padding: 0 1rem;
@@ -181,6 +201,32 @@ a.showcase:hover, a.showcase:focus {
 
 .contact-button:hover, .contact-button:focus {
     background-color: #0044d8;
+}
+
+.footer-space {
+    height: 1rem;
+}
+.footer-space.small {
+    display: inline-block;
+    width: 1.7rem;
+}
+
+.up-button {
+    float: right;
+    box-sizing: border-box;
+    border: none;
+    margin: 0 0 0 1rem;
+    padding: 0.2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: white;
+    background-color: #ffffff22;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+}
+.up-button:hover, .up-button:active {
+    background-color: #ffffff33;
 }
 
 @media (max-width: 800px) {
@@ -234,6 +280,11 @@ a.showcase:hover, a.showcase:focus {
 
     h2 {
         font-size: 1.7rem;
+    }
+
+    .footer-space.small {
+        display: block;
+        height: 1rem;
     }
 }
 
