@@ -30,31 +30,10 @@ header #header-canvas {
 }
 
 header .logo {
-    width: 6.3em;
+    width: 6em;
     display: block;
     margin: 0 auto;
-    text-align: left;
     position: relative;
-}
-
-header .logo .fancy-h {
-    position: relative;
-    font-style: italic;
-    font-weight: normal;
-}
-header .logo .fancy-underlay1 {
-    font-style: italic;
-    font-weight: 800;
-    color: #a6a6ff;
-    position: absolute;
-    user-select: none;
-}
-header .logo .fancy-underlay2 {
-    font-style: italic;
-    font-weight: 600;
-    color: #ff3a3a;
-    position: absolute;
-    user-select: none;
 }
 
 header .small-h {
