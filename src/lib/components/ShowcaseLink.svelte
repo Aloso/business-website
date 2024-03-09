@@ -4,14 +4,14 @@
   export let label: string
 </script>
 
-<a {href} target="_blank" rel="noopener noreferrer">
+<a class="showcase" {href} target="_blank" rel="noopener noreferrer">
   <img src="/screenshots/{img}" alt={label} />
   <div class="label">{label}</div>
   <div class="description"><slot /></div>
 </a>
 
 <style lang="scss">
-  a {
+  a.showcase {
     position: relative;
     display: inline-block;
     box-sizing: border-box;
@@ -28,34 +28,35 @@
     color: inherit;
     transition: 0.2s;
     overflow: hidden;
-    color: inherit;
 
     @media (max-width: 800px) {
       width: 100%;
     }
+
+    &:hover,
+    &:focus {
+      background-color: #dddddd;
+      text-decoration: none;
+    }
   }
 
-  a:hover,
-  a:focus {
-    background-color: #dddddd;
-    text-decoration: none;
-  }
-
-  a img {
+  img {
     width: 100%;
     aspect-ratio: 1.55;
     object-fit: cover;
     object-position: center top;
   }
 
-  a .label {
+  .label {
     margin: 1rem 2rem;
+    color: black;
   }
 
-  a .description {
+  .description {
     opacity: 0.6;
     font-size: 85%;
     margin: 1rem 2rem 2rem;
     font-weight: 400;
+    color: black;
   }
 </style>
