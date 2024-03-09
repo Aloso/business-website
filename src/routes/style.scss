@@ -3,10 +3,8 @@
 :root {
   font-family: Inter, sans-serif;
   font-size: 19px;
-}
 
-@supports (font-variation-settings: normal) {
-  :root {
+  @supports (font-variation-settings: normal) {
     font-family: InterVariable, sans-serif;
   }
 }
@@ -52,17 +50,6 @@ h3,
 p,
 dl {
   max-width: 55rem;
-}
-
-.home-link {
-  color: inherit;
-  text-decoration: none;
-}
-.home-link:hover,
-.home-link:active {
-  text-decoration: underline;
-  text-underline-offset: 0.2rem;
-  text-decoration-thickness: 1.6px;
 }
 
 @media (max-width: 800px) {

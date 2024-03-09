@@ -28,6 +28,7 @@
     color: inherit;
     transition: 0.2s;
     overflow: hidden;
+    color: inherit;
 
     @media (max-width: 800px) {
       width: 100%;
