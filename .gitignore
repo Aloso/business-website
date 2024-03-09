@@ -1,0 +1,21 @@
+# SvelteKit Files
+build/
+functions/
+/.svelte-kit
+
+# Dependency directories
+node_modules/
+/package
+
+# Caches and logs
+.eslintcache
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Other
+.DS_Store
