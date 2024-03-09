@@ -1,17 +1,17 @@
 <script lang="ts">
   import Block from '$lib/components/Block.svelte'
   import ContactButton from '$lib/components/ContactButton.svelte'
+  import EmailLink from '$lib/components/EmailLink.svelte'
+  import ExternLink from '$lib/components/ExternLink.svelte'
+  import Head from '$lib/components/Head.svelte'
   import Header from '$lib/components/Header.svelte'
   import ShowcaseLink from '$lib/components/ShowcaseLink.svelte'
 </script>
 
-<svelte:head>
-  <title>Web Design von Ludwig Stecher</title>
-  <meta
-    name="description"
-    content="Lassen Sie sich schnell und unkompliziert eine professionalle, elegante Website designen"
-  />
-</svelte:head>
+<Head
+  title="Web Design von Ludwig Stecher"
+  description="Lassen Sie sich schnell und unkompliziert eine professionalle, elegante Website designen"
+/>
 
 <Header />
 
@@ -79,11 +79,8 @@
   <p>
     Ich arbeite hauptberuflich als Softwareentwickler bei der Interhyp. In meiner Freizeit arbeite
     ich an ein paar Open-Source-Projekten. Sie finden mich auf
-    <a href="https://www.linkedin.com/in/ludwig-stecher/" target="_blank" rel="noreferrer noopener"
-      >LinkedIn</a
-    >
-    und auf
-    <a href="https://github.com/Aloso" target="_blank" rel="noreferrer noopener">GitHub</a>.
+    <ExternLink href="https://www.linkedin.com/in/ludwig-stecher/">LinkedIn</ExternLink> und auf
+    <ExternLink href="https://github.com/Aloso">GitHub</ExternLink>.
   </p>
 </Block>
 
@@ -110,8 +107,5 @@
 
 <Block variant="black">
   <h2>Kontakt</h2>
-  <p>
-    Senden Sie mir bitte eine E-Mail an
-    <a href="mailto:ludwig.stecher@gmx.de">ludwig.stecher@gmx.de</a>.
-  </p>
+  <p>Senden Sie mir bitte eine E-Mail an <EmailLink />.</p>
 </Block>

@@ -1,11 +1,10 @@
 <script lang="ts">
   import Block from '$lib/components/Block.svelte'
   import ContactButton from '$lib/components/ContactButton.svelte'
+  import Head from '$lib/components/Head.svelte'
 </script>
 
-<svelte:head>
-  <title>Impressum – Web Design von Ludwig Stecher</title>
-</svelte:head>
+<Head title="Datenschutz – Web Design von Ludwig Stecher" />
 
 <ContactButton />
 
