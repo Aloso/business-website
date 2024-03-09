@@ -5,12 +5,12 @@
     position: fixed;
     z-index: 1;
     display: inline-block;
-    bottom: calc(5px + 1vw);
-    right: calc(5px + 1vw);
+    bottom: calc(10px + 1vw);
+    right: calc(10px + 1vw);
     width: auto;
     box-sizing: border-box;
-    font-size: calc(18px + 0.3vw);
-    padding: calc(12px + 0.25vw) calc(20px + 0.35vw);
+    font-size: calc(22px + 0.2vw);
+    padding: calc(15px + 0.2vw) calc(25px + 0.3vw);
     border-radius: calc(8px + 0.2vw);
     background-color: #37ebff;
     color: black;

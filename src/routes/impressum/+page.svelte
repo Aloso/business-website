@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Block from '$lib/components/Block.svelte'
   import ContactButton from '$lib/components/ContactButton.svelte'
 </script>
 
@@ -8,7 +9,7 @@
 
 <ContactButton />
 
-<div class="block">
+<Block>
   <h1>Impressum</h1>
   <p>
     Diese Website wird betrieben von Ludwig Stecher. Wir verzichten auf den Einsatz von Trackern, um
@@ -53,4 +54,4 @@
     werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
     werden wir derartige Inhalte umgehend entfernen.
   </p>
-</div>
+</Block>

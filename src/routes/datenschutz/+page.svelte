@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Block from '$lib/components/Block.svelte'
   import ContactButton from '$lib/components/ContactButton.svelte'
 </script>
 
@@ -8,7 +9,7 @@
 
 <ContactButton />
 
-<div class="block">
+<Block>
   <h1>Datenschutz&shy;erklärung</h1>
   <h2>1. Datenschutz auf einen Blick</h2>
   <h3>Allgemeine Hinweise</h3>
@@ -249,4 +250,4 @@
     gesetzliche Bestimmungen &ndash; insbesondere gesetzliche Aufbewahrungsfristen &ndash; bleiben
     unberührt.
   </p>
-</div>
+</Block>
