@@ -17,17 +17,6 @@
   .block {
     padding: 3rem 5rem;
 
-    :global(a) {
-      color: #0079eb;
-      text-underline-offset: 0.33rem;
-      text-decoration-thickness: 1px;
-
-      &:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 1.6px;
-      }
-    }
-
     @media (max-width: 700px) {
       padding: 2rem 3rem;
     }
@@ -40,6 +29,7 @@
   .block.dark {
     background: linear-gradient(45deg, #040404, #242424);
     color: white;
+    --color-link: #94cbff;
 
     &.blue {
       background: linear-gradient(45deg, #00565c, #00636b);
@@ -53,10 +43,6 @@
     &.black {
       background: none;
       background-color: #040404;
-    }
-
-    :global(a) {
-      color: #6fb9ff;
     }
   }
 </style>

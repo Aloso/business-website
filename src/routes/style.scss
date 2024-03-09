@@ -7,10 +7,24 @@
   @supports (font-variation-settings: normal) {
     font-family: InterVariable, sans-serif;
   }
+
+  --color-link: #0079eb;
 }
 
 body {
   margin: 0;
+}
+
+a {
+  color: var(--color-link);
+  text-underline-offset: 0.33rem;
+  text-decoration-thickness: 1px;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 1.6px;
+  }
 }
 
 h1,
