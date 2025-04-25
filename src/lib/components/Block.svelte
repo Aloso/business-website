@@ -1,5 +1,11 @@
 <script lang="ts">
-  export let variant: 'white' | 'black' | 'green' | 'blue' | 'orange' = 'white'
+  import type { Snippet } from 'svelte'
+
+  interface Props {
+    variant?: 'white' | 'black' | 'green' | 'blue' | 'orange'
+    children: Snippet
+  }
+  let { variant = 'white', children }: Props = $props()
 </script>
 
 <div
@@ -10,7 +16,7 @@
   class:blue={variant === 'blue'}
   class:orange={variant === 'orange'}
 >
-  <slot />
+  {@render children()}
 </div>
 
 <style lang="scss">

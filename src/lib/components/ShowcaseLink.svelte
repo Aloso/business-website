@@ -1,13 +1,19 @@
 <script lang="ts">
-  export let href: string
-  export let img: string
-  export let label: string
+  import type { Snippet } from 'svelte'
+
+  interface Props {
+    href: string
+    img: string
+    label: string
+    children: Snippet
+  }
+  let { href, img, label, children }: Props = $props()
 </script>
 
 <a class="showcase" {href} target="_blank" rel="noopener noreferrer">
   <img src="/screenshots/{img}" alt={label} />
   <div class="label">{label}</div>
-  <div class="description"><slot /></div>
+  <div class="description">{@render children()}</div>
 </a>
 
 <style lang="scss">

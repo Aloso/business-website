@@ -20,22 +20,22 @@
 <Block variant="black">
   <h2>Mein Angebot</h2>
   <p>
-    Sie brauchen eine Website für Ihr Business? Dann kann ich Ihnen helfen. Ich entwickle mit Ihnen
-    zusammen ein individuelles Konzept und kümmere mich um die Umsetzung und Einrichtung. Einfach
-    und unkompliziert.
+    Sie brauchen eine Website für Ihr Business oder Projekt? Dabei helfe ich Ihnen gerne. Ich
+    entwickle mit Ihnen zusammen ein individuelles Konzept und kümmere mich um die Umsetzung und
+    Einrichtung. Einfach und unkompliziert.
+  </p>
+  <p>
+    Mit meiner jahrelangen Erfahrung im Bereich der Webentwicklung achte ich darauf, dass Ihre
+    Website auf dem neuesten Stand der Technik ist und zu Ihren Bedürfnissen passt.
   </p>
 </Block>
 
-<Block variant="white">
+<Block variant="blue">
   <h2>Gestalten Sie eine Marke</h2>
   <p>
     Machen Sie Ihre Website einzigartig und wiedererkennbar. Ich kann Ihnen dabei helfen, eine
     Designsprache samt Logo zu entwerfen.
   </p>
-</Block>
-
-<Block variant="blue">
-  <h2>Professioneller Look</h2>
   <p>
     Der erste Eindruck ist besonders wichtig, und mit modernen Webtechnologien sieht Ihre Website
     auf jedem Gerät großartig aus. Die Designs, die ich entwickle, sind aber nicht nur optisch
@@ -58,6 +58,11 @@
     Eine Website nützt nur etwas, wenn sie auch besucht wird. Dank meiner Erfahrung mit
     Suchmaschinenoptimierung sorge ich dafür, dass die Website in Google möglichst weit oben
     auftaucht.
+  </p>
+  <p>
+    Dazu gehört auch, dass die Website schnell lädt: Googles Algorithmus bestraft langsame Websites
+    durch ein schlechteres Ranking. Ein Fokus auf Performance macht die Website also nicht auch
+    benutzerfreundlicher, sondern auch erfolgreicher bei Suchmaschinen.
   </p>
 </Block>
 
@@ -87,21 +92,26 @@
 <Block variant="white">
   <h2>Vorgestellte Projekte</h2>
 
+  <ShowcaseLink
+    label="Queeres Zentrum Kassel"
+    href="https://www.queereszentrumkassel.de"
+    img="qzk.png"
+  >
+    Maßgeschneiderte Verwaltung von Veranstaltungen, verwendet u.a. ein Headless CMS und Edge
+    Computing
+  </ShowcaseLink>
   <ShowcaseLink label="M*Einladung" href="https://www.m-einladung.de" img="meinladung.jpg">
-    Eleganter Online-Shop für einen Wochenkalender
+    Minimalistischer Online-Shop für einen Wochenkalender, verwendet eine Stripe-Integration
   </ShowcaseLink>
   <ShowcaseLink label="Pomsky" href="https://pomsky-lang.org" img="pomsky.png">
-    Technische Dokumentation einer Programmiersprache
+    Technische Dokumentation einer Programmiersprache, verwendet Static Site Generation
   </ShowcaseLink>
   <ShowcaseLink
     label="Musikunterricht Holzkirchen"
     href="https://musikunterricht-holzkirchen.de"
     img="mh.jpg"
   >
-    Informative Website für eine private Musikschule
-  </ShowcaseLink>
-  <ShowcaseLink label="Persönlicher Blog" href="https://aloso.github.io" img="blog.png">
-    Hier schreibe ich über interessante Technologien
+    Informative Website für eine private Musikschule, verwendet u.a. das Cloudflare CDN.
   </ShowcaseLink>
 </Block>
 

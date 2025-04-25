@@ -1,7 +1,13 @@
 <script lang="ts">
-  export let title: string
-  export let description =
-    'Lassen Sie sich schnell und unkompliziert eine professionalle, elegante Website designen'
+  interface Props {
+    title: string
+    description?: string
+  }
+
+  let {
+    title,
+    description = 'Lassen Sie sich schnell und unkompliziert eine professionalle, elegante Website designen',
+  }: Props = $props()
 </script>
 
 <svelte:head>

@@ -1,14 +1,13 @@
-@use '../static/inter/inter.css';
+@use '../../static/inter/inter.css';
 
 :root {
   font-family: Inter, sans-serif;
   font-size: 19px;
+  --color-link: #0079eb;
 
   @supports (font-variation-settings: normal) {
     font-family: InterVariable, sans-serif;
   }
-
-  --color-link: #0079eb;
 }
 
 body {

@@ -14,7 +14,7 @@
     </h1>
   </div>
   <div class="g6">
-    <img src="/screenshots/blog.png" alt="Blog" />
+    <img src="/screenshots/qzk.png" alt="Queeres Zentrum Kassel" />
   </div>
   <div class="g7"></div>
   <div class="g8">
