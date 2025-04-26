@@ -26,7 +26,7 @@
     const delta = (Date.now() - start) / 800
 
     canvas.width = canvas.width
-    ctx.lineWidth = devicePixelRatio
+    ctx.lineWidth = devicePixelRatio / 2 + canvas.width / 1500
 
     const center = canvas.width / 2
 
