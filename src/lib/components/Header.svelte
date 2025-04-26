@@ -26,34 +26,35 @@
     const delta = (Date.now() - start) / 800
 
     canvas.width = canvas.width
+    ctx.lineWidth = devicePixelRatio
 
     const center = canvas.width / 2
 
-    ctx.strokeStyle = '#0003'
+    ctx.strokeStyle = '#0001'
     drawStarShapedCircle(ctx, center, center, center * 0.6, center * 0.65, 2, delta / 7)
     ctx.stroke()
     ctx.beginPath()
-    ctx.strokeStyle = '#0005'
+    ctx.strokeStyle = '#0002'
     drawStarShapedCircle(ctx, center, center, center * 0.65, center * 0.7, 3, delta / 6)
     ctx.stroke()
     ctx.beginPath()
-    ctx.strokeStyle = '#0007'
+    ctx.strokeStyle = '#0003'
     drawStarShapedCircle(ctx, center, center, center * 0.7, center * 0.75, 4, delta / 5)
     ctx.stroke()
     ctx.beginPath()
-    ctx.strokeStyle = '#0009'
+    ctx.strokeStyle = '#0004'
     drawStarShapedCircle(ctx, center, center, center * 0.75, center * 0.8, 6, delta / 4)
     ctx.stroke()
     ctx.beginPath()
-    ctx.strokeStyle = '#000b'
+    ctx.strokeStyle = '#0005'
     drawStarShapedCircle(ctx, center, center, center * 0.8, center * 0.85, 8, delta / 3)
     ctx.stroke()
     ctx.beginPath()
-    ctx.strokeStyle = '#000d'
+    ctx.strokeStyle = '#0006'
     drawStarShapedCircle(ctx, center, center, center * 0.85, center * 0.9, 10, delta / 2)
     ctx.stroke()
     ctx.beginPath()
-    ctx.strokeStyle = '#000f'
+    ctx.strokeStyle = '#0007'
     drawStarShapedCircle(ctx, center, center, center * 0.9, center * 0.95, 12, delta)
     ctx.stroke()
 
