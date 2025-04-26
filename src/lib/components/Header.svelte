@@ -177,5 +177,6 @@
     height: min(90svh, 90vw);
     margin-top: max(-45svh, -45vw);
     margin-left: max(-45svh, -45vw);
+    pointer-events: none;
   }
 </style>
