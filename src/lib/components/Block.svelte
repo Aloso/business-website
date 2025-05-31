@@ -2,26 +2,44 @@
   import type { Snippet } from 'svelte'
 
   interface Props {
-    variant?: 'white' | 'black' | 'green' | 'blue' | 'orange'
+    big?: boolean
+    variant?: 'white' | 'black' | 'green' | 'blue' | 'orange' | 'gray'
     children: Snippet
   }
-  let { variant = 'white', children }: Props = $props()
+  let { big, variant = 'white', children }: Props = $props()
 </script>
 
 <div
   class="block"
-  class:dark={variant !== 'white'}
+  class:big
+  class:dark={variant !== 'white' && variant !== 'gray'}
   class:black={variant === 'black'}
   class:green={variant === 'green'}
   class:blue={variant === 'blue'}
   class:orange={variant === 'orange'}
+  class:gray={variant === 'gray'}
 >
-  {@render children()}
+  <div class="block-inner">
+    {@render children()}
+  </div>
 </div>
 
 <style lang="scss">
   .block {
     padding: 3rem 5rem;
+
+    &.big {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+
+      :global(h2) {
+        margin-top: 0;
+      }
+
+      :global(p:last-child) {
+        margin-bottom: 0;
+      }
+    }
 
     @media (max-width: 700px) {
       padding: 2rem 3rem;
@@ -30,6 +48,11 @@
     @media (max-width: 600px) {
       padding: 2rem;
     }
+  }
+
+  .block-inner {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 
   .block.dark {
@@ -49,6 +72,12 @@
     &.black {
       background: none;
       background-color: #040404;
+    }
+  }
+
+  .block {
+    &.gray {
+      background: #eee;
     }
   }
 </style>

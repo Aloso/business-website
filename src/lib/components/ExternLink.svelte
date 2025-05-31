@@ -2,10 +2,11 @@
   import type { Snippet } from 'svelte'
 
   interface Props {
+    button?: boolean
     href: string
     children: Snippet
   }
-  let { href, children }: Props = $props()
+  let { button, href, children }: Props = $props()
 </script>
 
-<a {href} target="_blank" rel="noreferrer noopener">{@render children()}</a>
+<a class:button {href} target="_blank" rel="noreferrer noopener">{@render children()}</a>

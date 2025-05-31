@@ -24,6 +24,21 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 1.6px;
   }
+
+  &.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    background-color: #0001;
+    font-size: 1.1rem;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      background-color: #0002;
+    }
+  }
 }
 
 h1,
@@ -52,9 +67,42 @@ dt {
   font-size: 1.2rem;
   margin: 2rem 0;
   line-height: 1.5em;
+
+  li > & {
+    margin: 1rem 0;
+  }
 }
 dd {
   margin-left: 2rem;
+}
+
+ul {
+  list-style-type: '◥  ';
+  margin-left: 0;
+  padding-left: 2rem;
+
+  > li::marker {
+    color: #6500df;
+    font-size: 1rem;
+  }
+
+  ul > li > & {
+    list-style-type: '▸  ';
+
+    > li::marker {
+      color: inherit;
+    }
+  }
+}
+
+ol {
+  margin-left: 0;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+
+  > li::marker {
+    color: #6500df;
+  }
 }
 
 h1,
@@ -63,6 +111,20 @@ h3,
 p,
 dl {
   max-width: 55rem;
+}
+
+.card-subheading {
+  font-size: 1.1rem;
+  color: #6500df;
+  margin-bottom: 0.5rem;
+
+  + * {
+    margin-top: 0;
+  }
+}
+
+.clear {
+  clear: both;
 }
 
 @media (max-width: 800px) {

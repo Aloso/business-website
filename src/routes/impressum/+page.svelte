@@ -1,12 +1,12 @@
 <script lang="ts">
   import Block from '$lib/components/Block.svelte'
-  import ContactButton from '$lib/components/ContactButton.svelte'
   import Head from '$lib/components/Head.svelte'
+  import SmallHeader from '$lib/components/SmallHeader.svelte'
 </script>
 
 <Head title="Impressum – Web Design von Ludwig Stecher" />
 
-<ContactButton />
+<SmallHeader />
 
 <Block>
   <h1>Impressum</h1>
