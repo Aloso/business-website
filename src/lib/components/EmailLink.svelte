@@ -25,9 +25,11 @@
     &:focus {
       :global(.green) & {
         color: #007b00;
+        background-color: white;
       }
       :global(.blue) & {
         color: #007d86;
+        background-color: white;
       }
     }
   }
